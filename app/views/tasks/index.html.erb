@@ -4,5 +4,11 @@
 <% @tasks.each do |task| %>
 
 <p> <%= task.id %>, <%= task.name %>, <%= task.done %> </p>
-<p> <%=  link_to "More Details", tasks_path(task) %> </p>
+<p> <%=  link_to "More Details", task_path(task) %> </p>
+<p>  <%= link_to "Edit Task", edit_task_path(task) %></p>
+
+<%= link_to "Delete", task_path(task),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
 <% end %>
+
