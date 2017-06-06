@@ -1,0 +1,17 @@
+<h3> Enter a new Task </h3>
+
+<form action="/tasks" method="post">
+  <label for="name">Name: </label>
+  <input type="text" name="task[name]" id="name">
+
+
+  <label for="address">Description: </label>
+  <input type="text" name="task[description]" id="description">
+
+
+  <label for="address">Done? Enter True or False </label>
+  <input type="text" name="task[done]" id="done">
+
+  <input name="authenticity_token" type="hidden" value="token_value">
+  <input type="submit">
+</form>
