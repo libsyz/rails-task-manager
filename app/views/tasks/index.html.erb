@@ -1,0 +1,8 @@
+<h1>This is the index page</h1>
+<h3> Test to see if it is all working just fine </h3>
+
+<% @tasks.each do |task| %>
+
+<p> <%= task.id %>, <%= task.name %>, <%= task.done %> </p>
+
+<% end %>
